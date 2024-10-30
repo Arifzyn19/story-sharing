@@ -61,7 +61,7 @@ const upload = multer({ dest: 'uploads/' });
 
 function checkOrigin(req, res, next) {
   const origin = req.get('origin');
-  if (origin === 'http://localhost:3000' || !origin) {
+  if (origin === process.env.ALLOWED_ORIGIN || !origin) {
     next();
   } else {
     res.status(403).send('Not Allowed');
