@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share Your Story - A platform to publish and read personal stories. Write, upload media, and connect with readers from around the world.">
+    <title id="page-title"></title>
+    <link rel="alternate icon" class="js-site-favicon" type="image/ico" href="https://cdn.jsdelivr.net/gh/SazumiVicky/Storage@main/sazumiviki-ico.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/styles.css">
+
+    <meta property="og:title" id="og-title" content="">
+    <meta property="og:description" id="og-description" content="">
+    <meta property="og:image" id="og-image" content="">
+    <meta property="og:url" id="og-url" content="">
+    <meta property="og:type" content="article">
+</head>
+<body>
+    <div class="container">
+        <div id="media-container" class="media-container"></div>
+        <h1 id="story-title" class="story-title"></h1>
+        <div class="story-meta">
+            <p id="story-author" class="story-author"></p>
+            <p id="story-views" class="story-views"></p>
+        </div>
+        <div class="story-actions">
+            <button id="like-button" class="like-button" data-story-id="">
+                <span class="heart-icon">❤️</span>
+                <span id="like-count">0</span>
+            </button>
+            <div class="confetti-container"></div>
+        </div>
+        <div id="story-content" class="story-content"></div>
+        <div class="form-actions">
+            <button id="delete-button" class="delete-button" style="display: none;">DELETE</button>
+            <button id="back-home-button" class="back-home-button">CREATE MY STORY</button>
+        </div>
+    </div>
+    <footer class="footer">
+        Inspired from <a href="https://telegra.ph" class="footer-link">telegra.ph</a> & created by <a href="https://sazumi.moe" class="footer-link">Viki</a>
+    </footer>
+    <script src="/story.js"></script>
+</body>
+</html>

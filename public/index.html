@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazumi Cloud - Share Your Story</title>
+    <link rel="alternate icon" class="js-site-favicon" type="image/ico" href="https://cdn.jsdelivr.net/gh/SazumiVicky/Storage@main/sazumiviki-ico.ico">
+    <meta name="description" content="Share Your Story - A platform to publish and read personal stories. Write, upload media, and connect with readers from around the world.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="story-form">
+            <input type="text" id="title" placeholder="TITLE" maxlength="46">
+            <input type="text" id="author" placeholder="YOUR NAME" maxlength="20">
+            <textarea id="story" placeholder="YOUR STORY"></textarea>
+            <div class="form-actions">
+                <label for="media" class="file-input-label">
+                    <span>Choose file</span>
+                    <input type="file" id="media" accept="image/*,video/*">
+                </label>
+                <a href="/list" class="list-story-button">List Story</a>
+                <button type="submit" id="publish-button">
+                    <span id="button-text">Publish</span>
+                    <svg id="loading-icon" class="loading-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <circle cx="25" cy="25" r="20" fill="none" stroke-width="5" stroke="#000" stroke-linecap="round" stroke-dasharray="80 100">
+                            <animateTransform
+                                attributeName="transform"
+                                attributeType="XML"
+                                type="rotate"
+                                from="0 25 25"
+                                to="360 25 25"
+                                dur="1s"
+                                repeatCount="indefinite"
+                            />
+                        </circle>
+                    </svg>
+                    <svg id="block-icon" class="block-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"/>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div id="error-popup" class="error-popup">
+      <div class="error-content">
+        <h2 id="error-title">Error</h2>
+        <p id="error-message"></p>
+      </div>
+    </div>
+    <footer class="footer">
+        Inspired from <a href="https://telegra.ph" class="footer-link">telegra.ph</a> & created by <a href="https://sazumi.moe" class="footer-link">Viki</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
