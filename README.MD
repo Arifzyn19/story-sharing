@@ -58,4 +58,4 @@ MIT License - feel free to use this project for your own purposes.
 
 ## 🙏 Credits
 
-Created by [Viki] - Inspired by [Telegraph](https://telegra.ph)
+Created by Viki - Inspired by [Telegraph](https://telegra.ph)
