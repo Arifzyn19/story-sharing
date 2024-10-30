@@ -36,8 +36,8 @@ A minimalist story sharing platform inspired by Telegraph, allowing users to pub
 
 3. Create a `.env` file in the root directory with:
    ```env
- MONGODB_URI=YOUR_MONGODB_URL_HERE
- ALLOWED_ORIGIN=http://localhost:3000
+   MONGODB_URI=YOUR_MONGODB_URL_HERE
+   ALLOWED_ORIGIN=http://localhost:3000
    ```
 
 4. Start the server
